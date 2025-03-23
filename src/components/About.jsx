@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
+import ImageFachada from '@/assets/fachada.jpeg'; 
 
 export default function About() {
   const [ref, inView] = useInView({
@@ -19,14 +20,13 @@ export default function About() {
             transition={{ duration: 0.8 }}
             className="relative"
           >
-            <div className="aspect-w-16 aspect-h-9 rounded-2xl overflow-hidden">
+            <div className="aspect-w-16 aspect-h-9 rounded-2xl overflow-hidden border-[1px] border-primary-orange">
               <img
-                src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?ixlib=rb-4.0.3"
+                src={ImageFachada}
                 alt="Nossa loja"
                 className="w-full h-full object-cover"
               />
             </div>
-            <div className="absolute -bottom-6 -right-6 w-48 h-48 bg-primary-orange rounded-2xl -z-10"></div>
           </motion.div>
 
           <motion.div
@@ -39,7 +39,7 @@ export default function About() {
               Nossa História
             </h2>
             <p className="text-lg text-gray-600">
-              Desde 1995, a Praja Materiais tem sido referência em materiais de construção, ajudando pessoas a realizarem o sonho da casa própria. Nossa equipe de especialistas combina experiência com dedicação para entregar os melhores produtos e serviços.
+              Desde 2019, a Praja Materiais tem sido referência em materiais de construção, ajudando pessoas a realizarem o sonho da casa própria. Nossa equipe de especialistas combina experiência com dedicação para entregar os melhores produtos e serviços.
             </p>
             <div className="grid grid-cols-2 gap-6">
               <div className="space-y-2">
@@ -47,11 +47,11 @@ export default function About() {
                 <p className="text-gray-600">Anos de Experiência</p>
               </div>
               <div className="space-y-2">
-                <h4 className="text-2xl font-bold text-primary-orange">10k+</h4>
+                <h4 className="text-2xl font-bold text-primary-orange">10mil+</h4>
                 <p className="text-gray-600">Clientes Atendidos</p>
               </div>
               <div className="space-y-2">
-                <h4 className="text-2xl font-bold text-primary-orange">98%</h4>
+                <h4 className="text-2xl font-bold text-primary-orange">100%</h4>
                 <p className="text-gray-600">Satisfação</p>
               </div>
               <div className="space-y-2">

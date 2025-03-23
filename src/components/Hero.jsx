@@ -8,11 +8,7 @@ export default function Hero() {
   };
 
   return (
-    <div className="relative min-h-screen bg-gradient-to-br from-gray-900 to-gray-800 flex items-center">
-      <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1581094794329-c8112c4e5a0a?ixlib=rb-4.0.3')] bg-cover bg-center opacity-20"></div>
-        <div className="absolute inset-0 bg-gradient-to-b from-transparent to-gray-900/90"></div>
-      </div>
+    <div id='início' className="relative min-h-screen bg-gradient-to-br from-gray-900 to-gray-800 flex items-center">
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32">
         <motion.div
@@ -46,12 +42,9 @@ export default function Hero() {
             transition={{ duration: 0.8, delay: 0.6 }}
             className="flex flex-col sm:flex-row gap-4 justify-center"
           >
-            <button className="group bg-primary-orange text-white px-8 py-4 rounded-lg flex items-center justify-center gap-2 hover:bg-primary-blue transition-all duration-300 transform hover:scale-105">
-              Ver Produtos
-              <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-            </button>
-            <button className="bg-white/10 backdrop-blur-sm text-white px-8 py-4 rounded-lg hover:bg-white/20 transition-all duration-300 transform hover:scale-105">
+            <button onClick={() => window.location.href = "https://wa.me/551633827634"} className="group bg-primary-orange text-white px-8 py-4 rounded-lg flex items-center justify-center gap-2 hover:bg-primary-blue transition-all duration-300 transform hover:scale-105">
               Solicitar Orçamento
+              <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </button>
           </motion.div>
         </motion.div>

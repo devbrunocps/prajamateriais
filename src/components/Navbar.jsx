@@ -39,25 +39,25 @@ export default function Navbar() {
             transition={{ duration: 0.5 }}
             className="flex items-center"
           >
-            <h1 className={`text-2xl font-bold uppercase ${isScrolled ? 'text-gray-900' : 'text-white'}`}>
+            <h1 className={`text-2xl font-bold uppercase ${isScrolled ? 'text-primary-blue' : 'text-white'}`}>
               Praja<span className="text-primary-orange">Materiais</span>
             </h1>
           </motion.div>
 
           {/* Desktop Menu */}
           <div className="hidden md:flex items-center space-x-8">
-            {['produtos', 'sobre', 'localização', 'contato'].map((item) => (
+            {['início', 'sobre', 'avaliações', 'contato'].map((item) => (
               <button
                 key={item}
                 onClick={() => scrollToSection(item)}
-                className={`text-sm font-medium capitalize ${
+                className={`text-sm font-medium capitalize cursor-pointer ${
                   isScrolled ? 'text-gray-700 hover:text-primary-blue' : 'text-white/90 hover:text-white'
                 } transition-colors`}
               >
                 {item}
               </button>
             ))}
-            <button className="bg-primary-orange text-white px-6 py-2 rounded-lg hover:bg-primary-blue transition-colors">
+            <button onClick={() => window.location.href = "https://wa.me/551633827634"} className="bg-primary-orange text-white px-6 py-2 rounded-lg hover:bg-primary-blue transition-colors duration-300 cursor-pointer">
               Orçamento
             </button>
           </div>
@@ -83,7 +83,7 @@ export default function Navbar() {
               className="md:hidden overflow-hidden bg-white rounded-b-2xl shadow-xl"
             >
               <div className="px-4 py-6 space-y-4">
-                {['produtos', 'sobre', 'localização', 'contato'].map((item) => (
+                {['início', 'sobre', 'avaliações', 'contato'].map((item) => (
                   <button
                     key={item}
                     onClick={() => scrollToSection(item)}

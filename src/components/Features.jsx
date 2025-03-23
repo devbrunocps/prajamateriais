@@ -15,21 +15,6 @@ const features = [
     description: 'Entregamos em toda a região',
   },
   {
-    icon: Shield,
-    title: 'Garantia Total',
-    description: 'Produtos com garantia de fábrica',
-  },
-  {
-    icon: Wrench,
-    title: 'Assistência Técnica',
-    description: 'Suporte especializado para suas obras',
-  },
-  {
-    icon: Calculator,
-    title: 'Orçamento Grátis',
-    description: 'Cotações sem compromisso',
-  },
-  {
     icon: HeadSet,
     title: 'Atendimento Premium',
     description: 'Equipe especializada para ajudar',

@@ -5,23 +5,23 @@ import { ChevronLeft, ChevronRight, Quote } from 'lucide-react';
 const testimonials = [
   {
     id: 1,
-    content: "A Praja Materiais superou todas as minhas expectativas. Atendimento excelente e preços justos. Recomendo!",
-    author: "João Silva",
-    role: "Engenheiro Civil",
+    content: "Pode contar com a experiência dos proprietários e suas indicações. Preços justos. Confiáveis.",
+    author: "Cliente 1",
+    role: "Avaliação Google",
     image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3",
   },
   {
     id: 2,
-    content: "Encontrei tudo que precisava para minha reforma. A equipe é muito prestativa e conhecedora dos produtos.",
-    author: "Maria Santos",
-    role: "Arquiteta",
+    content: "Excelente atendimento, ótimos produtos.",
+    author: "Cliente 2",
+    role: "Avaliação Google",
     image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3",
   },
   {
     id: 3,
-    content: "Ótima experiência de compra. Entrega rápida e produtos de qualidade. Voltarei com certeza!",
-    author: "Pedro Oliveira",
-    role: "Mestre de Obras",
+    content: "Profissionais qualificados... sem contar que os presos são ótimos.",
+    author: "Cliente 3",
+    role: "Avaliação Google",
     image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3",
   },
 ];
@@ -38,7 +38,7 @@ export default function Testimonials() {
   };
 
   return (
-    <section className="py-20 bg-gray-50">
+    <section id='avaliações' className="py-20 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-primary-blue mb-4">
@@ -60,9 +60,9 @@ export default function Testimonials() {
                 transition={{ duration: 0.5 }}
                 className="absolute inset-0"
               >
-                <div className="bg-white rounded-2xl shadow-xl p-8 md:p-12 h-full">
+                <div className="bg-white rounded-2xl shadow-xl p-8 md:p-12">
                   <Quote className="w-12 h-12 text-primary-orange mb-6" />
-                  <blockquote className="text-xl md:text-2xl text-gray-900 mb-8">
+                  <blockquote className="text-lg md:text-xl text-gray-900 mb-8">
                     {testimonials[currentIndex].content}
                   </blockquote>
                   <div className="flex items-center">
