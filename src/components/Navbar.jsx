@@ -87,12 +87,12 @@ export default function Navbar() {
                   <button
                     key={item}
                     onClick={() => scrollToSection(item)}
-                    className="block w-full text-left px-4 py-2 text-gray-700 hover:text-primary-blue hover:bg-gray-50 rounded-lg transition-colors"
+                    className="block w-full capitalize text-left px-4 py-2 text-gray-700 hover:text-primary-blue hover:bg-gray-50 rounded-lg transition-colors"
                   >
                     {item}
                   </button>
                 ))}
-                <button className="w-full bg-primary-orange text-white px-6 py-3 rounded-lg hover:bg-primary-blue transition-colors">
+                <button onClick={() => window.location.href = "https://wa.me/551633827634"} className="w-full bg-primary-orange text-white px-6 py-3 rounded-lg hover:bg-primary-blue transition-colors">
                   Orçamento
                 </button>
               </div>

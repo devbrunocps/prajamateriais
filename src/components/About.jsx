@@ -55,7 +55,7 @@ export default function About() {
                 <p className="text-gray-600">Satisfação</p>
               </div>
               <div className="space-y-2">
-                <h4 className="text-2xl font-bold text-primary-orange">24h</h4>
+                <h4 className="text-2xl font-bold text-primary-orange">12h</h4>
                 <p className="text-gray-600">Suporte Online</p>
               </div>
             </div>
